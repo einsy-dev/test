@@ -1,0 +1,30 @@
+services:
+  php:
+    build: .
+    container_name: php
+    volumes:
+      - ./src:/var/www/html:rw
+
+    ports:
+      - 80:80
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: db
+    ports:
+      - 3306:3306
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    links:
+      - mysql:mysql
+    depends_on:
+      - mysql
+    ports:
+      - 8080:8080
