@@ -1,6 +1,5 @@
-<?php 
+<?php
 include 'db/index.php';
-include 'db/seed.php'; 
 ?> 
 
 <!DOCTYPE html>

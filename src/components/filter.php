@@ -4,14 +4,15 @@
 			<option value="price-asc">Price: low to height</option>
 			<option value="price-desc">Price: height to low</option>
 
-			<option value="date-asc">Date: low to height</option>
-			<option value="date-desc">Date: height to low</option>
+			<option value="created_at-asc">Date: low to height</option>
+			<option value="created_at-desc">Date: height to low</option>
 
 			<option value="title-asc">Name: A-Z</option>
 			<option value="title-desc">Name: Z-A</option>
 		</select>
 
 		<input type="search" name="search" id="form-search"/>
+		<?php include "components/category.php" ?>
 	</form>
 </div>
 
@@ -24,10 +25,11 @@
 	})
 	
 	const search = debounce(async() => {
-		const formData = new FormData(form);
-			const res = await fetch("/api/items.php", {method: "POST", body: formData}).then(async res => res.ok && await res.text());	
+			resetPage()
+			const res = await getData();
 			const parent = document.getElementById("item-list");
 			parent.innerHTML = res;
+			updateList();
 	}, 300);
 
 	form.addEventListener("change", (e) => {

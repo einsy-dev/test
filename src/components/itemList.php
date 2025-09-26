@@ -1,6 +1,6 @@
 <div class="item-list" id="item-list">
 	<?php
-	include "item.php";
+	include "components/item.php";
 	$data = $conn->query('SELECT * FROM Items LIMIT 9');
 	$cart_result = $conn->query('SELECT itemId FROM Cart');
 	$inCart = [];
@@ -18,28 +18,28 @@
 	}
 	?>
 </div>
-
 <script>
-	document.querySelectorAll(".add-to-cart-btn").forEach(btn => {
-		btn.addEventListener("click", async (e) => {
-			const params = new URLSearchParams({itemId: btn.getAttribute("data-item-id")});
-			const res = await fetch("/api/cart.php?"+params, {method: "POST"}).then(res => res.json());
-			document.dispatchEvent(new CustomEvent("addToCart"));
-			e.target.disabled = true;
-			e.target.innerText = "In Cart";
-		})
-	})
+	updateList();
+
+	async	function getData(page = 0) {
+			const form = document.getElementById("filter-form");
+			const params = new URLSearchParams({page});
+			const formData = new FormData(form);
+			const res = await fetch("/api/items.php?"+params, {method: "POST", body: formData }).then(async res => res.ok && await res.text());
+			return res;
+	};
 
 	let page = 1;
+	function resetPage() {  
+		page = 0
+	};
 	const parent = document.getElementById("item-list");
 	
 	async function handleScroll() {		
 		if (window.innerHeight + window.scrollY + 100 >= document.documentElement.scrollHeight ) {
-			console.log(page);
-				const params = new URLSearchParams({page});
-				const res = await fetch("/api/items.php?"+params).then(async res => res.ok && await res.text());		
+				const res = await getData(page);		
 				if (!res) return;
-				parent.insertAdjacentHTML("beforeend", res)
+				parent.insertAdjacentHTML("beforeend", res);
 				page++;
 		}
 	};

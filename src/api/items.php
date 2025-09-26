@@ -30,7 +30,12 @@ switch ($method) {
 		$search = $_POST["search"];
 		$sort = explode("-", $_POST["sort"]); // contain field and asc/desc
 		$dir = strtoupper(end($sort));
-		$sql = "SELECT * FROM Items WHERE title LIKE '$search%' ORDER BY $sort[0] $dir LIMIT 9 OFFSET $page";
+		$cat = $_POST["category"];
+		$sqlCat = "";
+		if (!empty($cat)) {
+			$sqlCat = " AND category = '$cat'";
+		}
+		$sql = "SELECT * FROM Items WHERE (title LIKE '$search%' $sqlCat) ORDER BY $sort[0] $dir LIMIT 9 OFFSET $page";
 		$data = $conn->query($sql);
 
 		while ($row = $data->fetch_assoc()) {

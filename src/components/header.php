@@ -13,7 +13,7 @@
 				$sql = "SELECT COUNT(*) as cart_total FROM Cart";
 				$result = $conn->query($sql)->fetch_assoc();
 				if ($result) {
-					echo $result["cart_total"];
+					echo $result["cart_total"] || "";
 				}
 				?>
 			</div>
