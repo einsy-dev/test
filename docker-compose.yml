@@ -2,9 +2,11 @@ services:
   php:
     build: .
     container_name: php
+    restart: always
+    depends_on:
+      - mysql
     volumes:
       - ./src:/var/www/html:rw
-
     ports:
       - 80:80
 

@@ -43,9 +43,8 @@ footer {
 }
 
 .item-list {
-
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
 }
 
@@ -77,4 +76,23 @@ footer {
 	gap: 1rem
 }
 
-.add-to-cart-btn {}
+.cart-item-image {
+	/* height: 100%; */
+	/* aspect-ratio: 1/1; */
+	max-height: 100px;
+	width: 100px;
+}
+.cart-item-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.cart-item {
+	display: flex;
+	gap: 1rem;
+}
+.filter-form {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}

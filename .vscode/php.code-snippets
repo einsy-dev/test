@@ -1,0 +1,12 @@
+{
+  "php": {
+    "prefix": [
+      "php"
+    ],
+    "body": [
+      "<?php ?>"
+    ],
+    "description": "",
+    "scope": "php"
+  }
+}

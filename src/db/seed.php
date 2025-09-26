@@ -1,7 +1,6 @@
 <?php
 include_once "index.php";
 
-
 if (!file_exists("db/seed.json")) {
 	return;
 }
@@ -14,7 +13,8 @@ if ($conn->query("SELECT * FROM Items")->num_rows === 0) {
 		$category = $seedData[$i]["category"];
 		$image = $seedData[$i]["image"];
 		$price = $seedData[$i]["price"];
-		$query = "INSERT INTO Items (title, about, category, image, price) VALUES ('$title', '$about', '$category', '$image', '$price' );";
+		$date = $seedData[$i]["date"];
+		$query = "INSERT INTO Items (title, about, category, image, price, created_at) VALUES ('$title', '$about', '$category', '$image', '$price', '$date');";
 		$conn->query($query);
 	}
 }

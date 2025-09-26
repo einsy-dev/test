@@ -4,141 +4,161 @@
       "title": "Adidas Ultraboost 22 Running Shoes",
       "description": "High-performance running shoes with BOOST midsole for maximum energy return and comfort.",
       "category": "Footwear",
-      "image": "ultraboost_22.jpg",
-      "price": 190
+      "image": "/images/image.jpg",
+      "price": 190,
+      "date": "2024-11-10"
     },
     {
       "title": "Nike Dri-FIT Training T-Shirt",
       "description": "Moisture-wicking fabric keeps you dry and comfortable during intense workouts.",
       "category": "Apparel",
-      "image": "dri-fit_tshirt.jpg",
-      "price": 35
+      "image": "/images/image.jpg",
+      "price": 35,
+      "date": "2025-03-04"
     },
     {
       "title": "Wilson Evolution Basketball (Official Size)",
       "description": "Premium indoor game basketball with a patented laid-in channels for better grip.",
       "category": "Equipment",
-      "image": "wilson_evolution.jpg",
-      "price": 70
+      "image": "/images/image.jpg",
+      "price": 70,
+      "date": "2025-07-19"
     },
     {
       "title": "Yoga Mat - 6mm Non-Slip",
       "description": "Durable and lightweight yoga mat with excellent grip for all types of yoga and fitness routines.",
       "category": "Accessories",
-      "image": "yoga_mat_6mm.jpg",
-      "price": 25
+      "image": "/images/image.jpg",
+      "price": 25,
+      "date": "2025-06-01"
     },
     {
       "title": "Hydro Flask Standard Mouth Water Bottle (21 oz)",
       "description": "Insulated stainless steel water bottle keeps drinks cold for up to 24 hours and hot for up to 12.",
       "category": "Hydration",
-      "image": "hydroflask_21oz.jpg",
-      "price": 32
+      "image": "/images/image.jpg",
+      "price": 32,
+      "date": "2025-02-13"
     },
     {
       "title": "Under Armour ColdGear Compression Leggings",
       "description": "Dual-layer fabric with a warm brushed interior and a slick, fast-drying exterior for cold weather.",
       "category": "Apparel",
-      "image": "ua_coldgear_leggings.jpg",
-      "price": 55
+      "image": "/images/image.jpg",
+      "price": 55,
+      "date": "2025-01-27"
     },
     {
       "title": "Spalding NBA Official Game Ball",
       "description": "The official game ball of the NBA, made with high-quality leather for superior performance.",
       "category": "Equipment",
-      "image": "spalding_nba_ball.jpg",
-      "price": 180
+      "image": "/images/image.jpg",
+      "price": 180,
+      "date": "2024-12-09"
     },
     {
       "title": "Garmin Forerunner 955 Solar Watch",
       "description": "Multi-sport GPS watch with solar charging, advanced metrics, and wrist-based running dynamics.",
       "category": "Electronics",
-      "image": "garmin_forerunner_955.jpg",
-      "price": 599
+      "image": "/images/image.jpg",
+      "price": 599,
+      "date": "2025-05-06"
     },
     {
       "title": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair)",
       "description": "Adjusts from 5 to 52.5 lbs in 2.5 lb increments up to the first 25 lbs. Saves space and is versatile.",
       "category": "Fitness Equipment",
-      "image": "bowflex_552.jpg",
-      "price": 429
+      "image": "/images/image.jpg",
+      "price": 429,
+      "date": "2025-08-15"
     },
     {
       "title": "Titleist Pro V1 Golf Balls (Dozen)",
       "description": "The choice of professionals. Offers exceptional distance, consistent flight, and short game control.",
       "category": "Golf",
-      "image": "titleist_prov1.jpg",
-      "price": 54
+      "image": "/images/image.jpg",
+      "price": 54,
+      "date": "2025-04-21"
     },
     {
       "title": "Babolat Pure Aero Tennis Racket",
       "description": "Designed for players who seek power and spin. Used by top ATP and WTA players.",
       "category": "Racquet Sports",
-      "image": "babolat_pure_aero.jpg",
-      "price": 249
+      "image": "/images/image.jpg",
+      "price": 249,
+      "date": "2025-07-02"
     },
     {
       "title": "GoPro HERO11 Black Camera",
       "description": "Waterproof action camera with HyperSmooth 5 stabilization and high-resolution video.",
       "category": "Electronics",
-      "image": "gopro_hero11.jpg",
-      "price": 499
+      "image": "/images/image.jpg",
+      "price": 499,
+      "date": "2025-03-22"
     },
     {
       "title": "Fox 40 Classic Whistle",
       "description": "Pea-less design with a loud, reliable sound. Essential for coaches and referees.",
       "category": "Accessories",
-      "image": "fox40_whistle.jpg",
-      "price": 8
+      "image": "/images/image.jpg",
+      "price": 8,
+      "date": "2024-10-05"
     },
     {
       "title": "Mizuno Wave Lightning Z6 Volleyball Shoes",
       "description": "Lightweight and high-performing shoes offering excellent cushioning and stability for court sports.",
       "category": "Footwear",
-      "image": "mizuno_lightning_z6.jpg",
-      "price": 120
+      "image": "/images/image.jpg",
+      "price": 120,
+      "date": "2025-06-27"
     },
     {
       "title": "Ski Goggles with Anti-Fog Coating",
       "description": "UV protection and anti-fog technology for clear vision on the slopes. Over-the-glasses compatible.",
       "category": "Winter Sports",
-      "image": "ski_goggles.jpg",
-      "price": 65
+      "image": "/images/image.jpg",
+      "price": 65,
+      "date": "2025-01-10"
     },
     {
       "title": "Resistance Band Set (5-piece)",
       "description": "Includes five different resistance levels for a full-body workout. Comes with a carrying bag.",
       "category": "Fitness Equipment",
-      "image": "resistance_band_set.jpg",
-      "price": 19
+      "image": "/images/image.jpg",
+      "price": 19,
+      "date": "2025-09-01"
     },
     {
       "title": "New Balance 990v5 Lifestyle Sneakers",
       "description": "Iconic sneaker known for its comfort, durability, and classic style. Made in the USA.",
       "category": "Footwear",
-      "image": "new_balance_990v5.jpg",
-      "price": 185
+      "image": "/images/image.jpg",
+      "price": 185,
+      "date": "2025-04-09"
     },
     {
       "title": "Bike Helmet - MIPS Technology",
       "description": "Advanced bike helmet featuring MIPS (Multi-directional Impact Protection System) for safety.",
       "category": "Cycling",
-      "image": "mips_bike_helmet.jpg",
-      "price": 99
+      "image": "/images/image.jpg",
+      "price": 99,
+      "date": "2024-12-30"
     },
     {
       "title": "Camping Backpack (65L)",
       "description": "Large capacity internal frame backpack with adjustable torso length, perfect for multi-day hikes.",
       "category": "Outdoor Gear",
-      "image": "camping_backpack_65l.jpg",
-      "price": 149
+      "image": "/images/image.jpg",
+      "price": 149,
+      "date": "2025-08-03"
     },
     {
       "title": "Under Armour Storm Half-Zip Pullover",
       "description": "Water-repellent, breathable pullover with a soft, brushed interior for lightweight warmth.",
       "category": "Apparel",
-      "image": "ua_storm_pullover.jpg",
-      "price": 85
+      "image": "/images/image.jpg",
+      "price": 85,
+      "date": "2025-02-24"
     }
   ]
 }

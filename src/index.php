@@ -5,6 +5,5 @@
 		<?php include 'components/filter.php'; ?>
 		<?php include 'components/itemList.php'; ?>
 	</main>
-	<?php include 'components/footer.php'; ?>
 </body>
 </html>

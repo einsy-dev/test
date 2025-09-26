@@ -1,4 +1,7 @@
-<?php include 'db/index.php'; ?> 
+<?php 
+include 'db/index.php';
+include 'db/seed.php'; 
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,5 +9,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style/index.css" />
+	<script src="js/index.js"></script>
 	<title>Document</title>
 </head>

@@ -22,15 +22,17 @@ $createItemsTable = "CREATE TABLE IF NOT EXISTS Items (
 	about VARCHAR(255) NOT NULL,
 	category VARCHAR(255) NOT NULL,
 	image VARCHAR(255) NOT NULL,
-	price INT(64) UNSIGNED DEFAULT(0)
+	price INT(64) UNSIGNED DEFAULT(0),
+	created_at DATE NOT NULL
 )";
 
 $conn->query($createItemsTable);
 
 $createCartTable = "CREATE TABLE IF NOT EXISTS Cart (
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	itemId INT(6) UNSIGNED,
-	quantity INT(6) UNSIGNED,
+	itemId INT(6) UNSIGNED NOT NULL,
+	quantity INT(6) UNSIGNED NOT NULL
 )";
 
-$conn->query($createCartTable);
+$prep = $conn->prepare($createCartTable);
+$prep->execute();
